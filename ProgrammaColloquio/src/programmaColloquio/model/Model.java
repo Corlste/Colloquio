@@ -11,7 +11,6 @@ public class Model {
 	public LinkedList<Temperatura> temperature = new LinkedList<Temperatura>();
 	private String risultato = null;
 
-	
 	public String getResult(String filec) {
 		if (filec.equals("weather")){
 			int day=0;
@@ -102,9 +101,6 @@ public class Model {
 				
 			}
 		}
-
-	
-	
 	
 	
 	if (filec.equals("football")){
@@ -121,17 +117,13 @@ public class Model {
 				if (st.hasMoreTokens()) {
 					st.nextToken();
 					String input = st.nextToken();
-					
 					String squadra = null;
 					int f ;
 					int a ;
 					String temporary= null;
-
-					
+				
 					if(input.matches(".*[a-zA-Z0-9].*")) {
 					squadra = input;
-					
-					
 					st.nextToken();
 					st.nextToken();
 					st.nextToken();
